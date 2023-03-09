@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.swing.DefaultBoundedRangeModel;
-
 public class App {
 
     public static void simpleCalculator() {

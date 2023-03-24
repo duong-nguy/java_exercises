@@ -54,6 +54,7 @@ public class App {
         String userInput1 = scanner.nextLine();
         System.out.print("Enter text:");
         String userInput2 = scanner.nextLine();
+        scanner.close();
         
         String userInput12 = userInput1 + userInput2;
         String userInput21 = userInput2 + userInput1;
@@ -70,13 +71,13 @@ public class App {
 
         System.out.println(userInput12 + " is alternating: " + input12Alt);
         System.out.println(userInput21 + " is alternating: " + input21Alt);
-        scanner.close();
     }
     public static void palindromeChecker() {
         Scanner scanner = new Scanner(System.in);
         String userInput = scanner.nextLine();
         userInput = userInput.toLowerCase();
         int inputLen = userInput.length();
+        scanner.close();
         for (int i = 0; i < inputLen ;i++) {
             if(userInput.charAt(i) != userInput.charAt(inputLen - i -1)){
                 System.out.println(userInput + " is not a Palindrome");
@@ -84,7 +85,6 @@ public class App {
             }
         } 
         System.out.println(userInput + " is a Palindrome");
-        scanner.close();
     }
 
     public static void main(String[] args) throws Exception {

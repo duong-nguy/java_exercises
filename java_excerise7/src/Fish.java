@@ -1,0 +1,57 @@
+
+
+public class Fish extends Animal {
+    String name;
+    String scaleColors; 
+    int age, weight;
+    public Fish(String name, int age, int weight,String scaleColor) {
+        this.name = name;
+        this.age = age;
+        this.weight = weight;
+        this.scaleColors = scaleColor;
+    }
+    public Fish(String name, int weight) {
+        this.name = name;
+        this.weight = weight;
+    }
+    public Fish(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public String getScaleColors() {
+        return scaleColors;
+    }
+    public void setFeatherColors(String scaleColors) {
+        this.scaleColors = scaleColors;
+    }
+    @Override
+    public String toString() {
+    return "Name: " + name + "\nAge: " +age+ "\nWeight: " +weight+ "\nScale color: " +scaleColors;
+    }
+    @Override
+    public void eat() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'eat'");
+    }
+
+    @Override
+    public String getVoice() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getVoice'");
+    }
+}

@@ -14,7 +14,7 @@ public class Person{
         + "\nCity: " + this.cityNguy63408);
     }
 }
-class Staff extends Person{
+class Staff extends Person implements ISalary{
     String educationNguy63408, positionNguy63408;
     
     public void init1(String surnameNguy63408, String firstNameNguy63408, String streetNguy63408, String zipCodeNguy63408,
@@ -27,6 +27,11 @@ class Staff extends Person{
     public void print1() {
         print();
         System.out.println("Education: "+this.educationNguy63408  + "\nposision: " + this.positionNguy63408 );
+    }
+
+    @Override
+    public int salaryToPay(int hours, int rate) {
+        return hours * rate;
     }
 
 }

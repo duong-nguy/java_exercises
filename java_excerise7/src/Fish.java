@@ -45,13 +45,23 @@ public class Fish extends Animal {
     }
     @Override
     public void eat() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'eat'");
     }
 
     @Override
     public String getVoice() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getVoice'");
+    }
+    @Override
+    public String getName() {
+        return this.name;
+    }
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+    @Override
+    public void sleep() {
+        System.out.println("fish: sleep");
     }
 }

@@ -30,6 +30,11 @@ public class Dog extends Mammal {
         // TODO Auto-generated method stub
         return "Bark bark";
     }
+
+    @Override
+    public void sleep() {
+        System.out.println("Dog: sleep");
+    }
     
     
 }

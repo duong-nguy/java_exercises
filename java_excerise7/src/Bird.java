@@ -20,15 +20,14 @@ public class Bird extends Animal {
         this.age = age;
         this.weight = weight;
     }
-
+    @Override
     public String getName() {
         return name;
     }
-
+    @Override
     public void setName(String name) {
         this.name = name;
     }
-
     public String getFeatherColors() {
         return featherColors;
     }
@@ -36,19 +35,19 @@ public class Bird extends Animal {
     public void setFeatherColors(String featherColors) {
         this.featherColors = featherColors;
     }
-
+    @Override
     public int getAge() {
         return age;
     }
-
+    @Override
     public void setAge(int age) {
         this.age = age;
     }
-
+    @Override
     public int getWeight() {
         return weight;
     }
-
+    @Override
     public void setWeight(int weight) {
         this.weight = weight;
     }
@@ -68,5 +67,10 @@ public class Bird extends Animal {
     public String getVoice() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getVoice'");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Bird sleep");
     }
 }

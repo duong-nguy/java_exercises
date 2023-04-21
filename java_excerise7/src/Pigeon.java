@@ -24,6 +24,10 @@ public class Pigeon extends Bird {
     public String getVoice() {
         // TODO Auto-generated method stub
         return "Cu Cu";
+    }
+    @Override
+    public void sleep() {
+        System.out.println("Pigeon: sleep");
     } 
     
 }

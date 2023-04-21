@@ -31,5 +31,10 @@ public class BlowFish extends Fish {
         return "blob blob";
     }
 
+    @Override
+    public void sleep() {
+        System.out.println("BlowFish: sleep");
+    }
+
     
 }

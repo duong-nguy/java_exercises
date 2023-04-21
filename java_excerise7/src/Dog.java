@@ -35,6 +35,11 @@ public class Dog extends Mammal {
     public void sleep() {
         System.out.println("Dog: sleep");
     }
+
+    @Override
+    public void move() {
+        System.out.println("Dog: run");
+    }
     
     
 }

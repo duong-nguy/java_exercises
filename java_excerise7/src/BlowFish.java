@@ -36,5 +36,9 @@ public class BlowFish extends Fish {
         System.out.println("BlowFish: sleep");
     }
 
+    @Override
+    public void move() {
+        System.out.println("Blow Fish: Swim");
+    }
     
 }

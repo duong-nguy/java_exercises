@@ -29,6 +29,10 @@ public class DataManagement {
         }
         return usrInput;
     }
+    public String readData1() {
+        return System.console().readLine();
+        
+    }
     public void writeDataToFile(String data) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(dbName,true))) {
             writer.append(data + "\n");

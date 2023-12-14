@@ -92,8 +92,8 @@ if __name__=='__main__':
     with open(csv_file, 'w', newline='') as file:
         writer = csv.writer(file)
 
-        writer.writerow(['Image Size', 'Inference Time (ms)',
-                         'Train Time (ms)', 'Inference Memories (GB)',
+        writer.writerow(['Image Size', 'Inference Time (s)',
+                         'Train Time (s)', 'Inference Memories (GB)',
                          'Train Memories (GB)'])
 
         for image_size, benchmark_data in results.items():
